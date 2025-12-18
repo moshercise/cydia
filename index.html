@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="https://jenil.github.io/chota/doc-styles.css">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2615.png">
     <title>cydia.gg</title>
-    <meta name="description" content="cydia">
-    <meta name="keywords" content="cydia,hollister,emily,emily.monster,emily.coffee,fakewebpage,fakewebpage twitter,netizen,netizen csgo,fullwidth">
-    <meta property="og:title" content="cydia.gg">
-    <meta property="og:url" content="https://cydia.gg">
-    <meta property="og:type" content="website">
 <style>
-.center {
-  width:80%;
-  max-width: 800px;
-  height: 75vh;
-  margin: 0 auto;
-
-  display: grid;
-  place-content: center;
+h1, h2, h3, h4, h5, h6 {
+    margin: .4em 0 .1em;
+}
+.tabs > .dropdown > summary,
+.tabs > a {
+  padding: 1rem 2rem;
+  flex: 0 1 auto;
+  color: var(--color-Grey);
+  border-bottom: 0px solid var(--color-lightGrey);
   text-align: center;
 }
+
+.tabs>a.active, .tabs>a:hover, .tabs>a[aria-current=page] {
+    border-bottom: 0px solid var(--color-darkGrey);
+    opacity: 1;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: .1;
+}
 </style>
-</head>
+  </head>
 <body>
-<div class="center">
-  	<h1>cydia dot gg</h1>
-	<h3>discord - aidyc</h3>
-    		<hr>
-	<details>
-		<summary>Links / Social Media</summary>
-		<a href="https://twitter.com/hollister">Twitter</a></br>
-		<a href="https://instagram.com/beidnahga">Instagram</a></br>
-		<a href="https://www.roblox.com/users/76084805/profile">ROBLOX</a></br>
-	</details>
-</div>
+<div class="container">
+    <div class="hero is-full-screen">
+      <div class="logo is-center is-vertical-align">
+        <img src=".\logo.png" alt="">
+        <h3>builder and video editor ☕ discord: aidyc</h3>
+        <nav class="tabs is-center">
+        <a href="https://www.roblox.com/users/76084805/profile">ROBLOX</a>
+        <a href="https://twitter.com/hollister">Twitter</a>
+        <a href="https://instagram.com/beidnahga">Instagram</a>
+      </nav>
+      </div>
+  </div>
 </body>
 </html>
