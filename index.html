@@ -1,54 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://unpkg.com/chota@latest"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="https://jenil.github.io/chota/doc-styles.css">
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2615.png">
-    <title>cydia.gg</title>
-<style>
-h1, h2, h3, h4, h5, h6 {
-    margin: .4em 0 .1em;
-}
-.tabs > .dropdown > summary,
-.tabs > a {
-  padding: 1rem 2rem;
-  flex: 0 1 auto;
-  color: var(--color-Grey);
-  border-bottom: 0px solid var(--color-lightGrey);
-  text-align: center;
-}
-
-.tabs>a.active, .tabs>a:hover, .tabs>a[aria-current=page] {
-    border-bottom: 0px solid var(--color-darkGrey);
-    opacity: 1;
-}
-html {
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    line-height: .1;
-}
-</style>
-  </head>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cydia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      background: #ffffff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #262626;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: min(90vw, 420px);
+      width: 100%;
+      padding: 0 24px;
+    }
+    .boxdog-scroll {
+      height: calc(min(8vw, 72px) * 1.374);
+      margin-bottom: min(4vw, 36px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .boxdog-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    .boxdog-scroll a {
+      flex: 0 0 auto;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 6px;
+      background-size: cover;
+      background-position: center;
+      display: block;
+    }
+    .name,
+    .date,
+    .bio,
+    .bio p,
+    .footer a {
+      font-size: min(2.8vw, 15px);
+      line-height: 1.2;
+      letter-spacing: -0.1px;
+    }
+    .name {
+      margin-bottom: 1px;
+    }
+    .date {
+      color: #939393;
+    }
+    .bio {
+      margin-top: clamp(10px, 2.3vh, 21px);
+    }
+    .bio p {
+      margin-top: clamp(10px, 2.3vh, 21px);
+    }
+    .bio a {
+      color: #5199de;
+      text-decoration: none;
+    }
+    .bio a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: clamp(16px, 4vh, 36px);
+      display: flex;
+      gap: 14px;
+    }
+    .footer a {
+      color: #939393;
+      text-decoration: none;
+      letter-spacing: -0.495px;
+      transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #262626;
+    }
+    @media (max-width: 540px) {
+      .container {
+        padding: 0 28px;
+      }
+    }
+  </style>
+</head>
 <body>
-<div class="container">
-    <div class="hero is-full-screen">
-      <div class="logo is-center is-vertical-align">
-        <img src=".\logo.png" alt="">
-        <h3>builder and video editor ☕</h3>
-        <nav class="tabs is-center">
-        <a href="https://www.roblox.com/users/76084805/profile">roblox</a>
-        <a href="https://twitter.com/UnionOperation">twitter</a>
-        <a href="https://instagram.com/beidnahga">instagram</a>
-        <a>discord: aidyc</a>
-      </nav>
-      </div>
-  </div>
-</body>
-</html>
+  <main class="container">
+    <div class="boxdog-scroll" id="boxdog-scroll">
+      <a href="https://breakbeat.artstation.com/projects/Ov1rQv" target="_blank" style="background-image: url('https://cdnb.artstation.com/p/assets/images/images/099/334/189/smaller_square/emily-robloxstudiobeta-yzxijxvltp.webp');"></a>
+      <a href="https://breakbeat.artstation.com/projects/Ezr66v" target="_blank" style="background-image: url('https://cdnb.artstation.com/p/assets/images/images/099/333/827/smaller_square/emily-robloxstudiobeta-ffy2vunzvu.webp');"></a>
+      <a href="https://breakbeat.artstation.com/projects/bg2yko" target="_blank" style="background-image: url('https://cdna.artstation.com/p/assets/images/images/099/333/690/smaller_square/emily-robloxstudiobeta-dp9znlets5.webp');"></a>
+      <a href="https://breakbeat.artstation.com/projects/Jro2Ya" target="_blank" style="background-image: url('https://cdna.artstation.com/p/assets/images/images/099/333/564/smaller_square/emily-robloxstudiobeta-spyzagej1x.webp');"></a>
+      <a href="https://breakbeat.artstation.com/projects/6L9l60" target="_blank" style="background-image: url('https://cdnb.artstation.com/p/assets/images/images/099/333/475/smaller_square/emily-robloxstudiobeta-iueqsrvaip.webp');"></a>
+    </div>
+    <p class="name">cydia</p>
+    <p class="date">last updated july 4th, 2026</p>
+    <div class="bio">
+      <p>level designer, artist</p>
+      <p>currently @ <a href="https://www.roblox.com/communities/35238336/Reimplemented#!/about" target="_blank">reimplemented</a></p>
+    </div>
+    <div class="footer">
+      <a href="https://www.instagram.com/beidnahga" target="_blank">instagram</a>
+      <a href="https://x.com/unionoperation" target="_blank">twitter</a>
+	  <a href="https://www.roblox.com/users/76084805/profile" target="_blank">roblox</a>
+    </div>
+  </main>
+  <script>
+    var el = document.getElementById('boxdog-scroll');
+    el.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        el.scrollLeft += e.deltaY;
+        e.preventDefault();
+      }
+    }, { passive: false });
+  </script>
+<!-- based on rokadakia.com modified with claude o/ -->
+</body></html>
